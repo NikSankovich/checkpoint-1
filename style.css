@@ -1,0 +1,396 @@
+/* main page styling */
+
+.lb-logo {
+    color: red;
+    text-align: center;
+    /* margin-top: 10px; */
+}
+
+/*BEGIN wrapper for header nav links */
+.nav-wrap {
+    /* color: red; */
+    display: grid;
+    grid-column: repeat(5, 1fr);
+    grid-row: 1fr;
+    grid-template-areas: "nav-links1 nav-links2 nav-links3 nav-links4 nav-links5";
+    margin-bottom: 10px;
+    /* flex-direction: row; */
+}
+
+.nav-links1 {
+    grid-area: nav-links1;
+}
+
+.nav-links2 {
+    grid-area: nav-links2;
+}
+
+.nav-links3 {
+    grid-area: nav-links3;
+}
+
+.nav-links4 {
+    grid-area: nav-links4;
+}
+
+.nav-links5 {
+    grid-area: nav-links5;
+}
+
+/* END wrapper for header nav links */
+
+/* BEGIN wrapper for main content */
+.main-wrap {
+    display: grid;
+    /* height: max-content; */
+    border: 5px solid black;
+    background-color: rgb(210, 204, 204);
+    /* width: fit-content; */
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        "main-s1 main-s2"
+        ". main-s3"
+        ". main-s4"
+        ". main-s5"
+        ". main-s6"; */
+    display: flex;
+    flex-direction: column;
+    background-image: url(./m-b2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.main-s1 {
+    grid-area: main-s1;
+    /* border: 5px solid blue; */
+    height: ;
+    /* background-color: rgb(212, 206, 206); */
+    /* max-width: 10%;
+    max-height: 100%; */
+    /* background-image: url(./m-b2.jpg);
+    background-size: 100vh; */
+    /* background-repeat: no-repeat; */
+}
+
+.main-s2 {
+    grid-area: main-s2;
+    color: black;
+    background-color: white;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding-left: 30px;
+    padding-top: 5px;
+
+}
+
+.main-s3 {
+    grid-area: main-s3;
+    color: white;
+    background-color: black;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+.main-s4 {
+    grid-area: main-s4;
+    color: white;
+    background-color: black;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+.main-s5 {
+    grid-area: main-s5;
+    color: white;
+    background-color: black;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+.main-s6 {
+    grid-area: main-s6;
+    color: white;
+    width: 18%;
+    background-color: rgb(61, 186, 174);
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-left: 22px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+/* END wrapper for main content */
+
+/* BEGIN wrapper for footer */
+.social {
+    display: grid;
+    grid-column: repeat(3, 1fr);
+    grid-row: 1fr;
+    grid-template-areas: "instagram facebook linkedin";
+    justify-content: end;
+    place-self: center;
+    /* border: 5px solid red; */
+}
+
+.instagram {
+    grid-area: instagram;
+    padding-right: 20px;
+}
+
+.facebook {
+    grid-area: facebook;
+    padding-right: 20px
+}
+
+.linkedin {
+    grid-area: linkedin;
+    padding-right: 20px
+}
+
+/* END wrapper for footer */
+
+/* BEGIN wrapper for sect 2 landing page */
+
+.sect2-wrap {
+    /* color: red; */
+    display: grid;
+    grid-column: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr;
+    grid-template-areas:
+        "sect2-1 sect2-2 sect2-3"
+        "sect2-4 sect2-5 sect2-6";
+    /* margin-bottom: 10px; */
+
+}
+
+
+
+.sect2-1 {
+    grid-area: sect2-1;
+    background-image: url(./square.jpg);
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    /* border: 5px solid red; */
+}
+
+.sect2-2 {
+    grid-area: sect2-2;
+}
+
+.sect2-3 {
+    grid-area: sect2-3;
+}
+
+.sect2-4 {
+    grid-area: sect2-4;
+}
+
+.sect2-5 {
+    grid-area: sect2-5;
+}
+
+.sect2-6 {
+    grid-area: sect2-6;
+}
+
+/* END wrapper for sect 2 landing page  */
+
+/* BEGIN CSS FOR ABOUT PAGE */
+
+/* BEGIN wrapper for about page */
+
+.about-wrapper {
+    /* color: red; */
+    /* display: grid;
+    width: 80%;
+    grid-column: 1fr;
+    grid-row: repeat(6, 1fr);
+    grid-template-areas:
+        "about-s1"
+        "about-s2"
+        "about-s3"
+        "about-s4"
+        "about-s5"
+        "about-s6"; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 5px solid blue;
+
+
+
+    /* margin-bottom: 10px; */
+
+}
+
+
+.about-s1 {
+    /* grid-area: about-s1; */
+    color: white;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.about-s2 {
+    /* grid-area: about-s2; */
+    /* background-image: url(./ph.jpg); */
+    /* width: 200px; */
+    /* height: 300px; */
+    /* text-align: center; */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    border: 3px solid black;
+}
+
+
+.about-s3 {
+    /* grid-area: about-s3; */
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+
+.about-s4 {
+    /* grid-area: about-s4; */
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.about-s5 {
+    /* grid-area: about-s5; */
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.about-s6 {
+    /* grid-area: about-s6; */
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+
+
+/* END wrapper for about page */
+
+/* ABOUT - end CSS*/
+
+/* BLOG - begin CSS */
+
+.blog-h1 {
+    color: white;
+    background-color: black;
+    width: 10%;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.blog-wrap {
+    /* color: red; */
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+    grid-template-areas:
+        "blog-s1 blog-s2"
+        "blog-s3 blog-s4"
+        "blog-s5 blog-s6";
+    border: 5px solid blue;
+    width: 75%;
+    align-items: center;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* margin-bottom: 10px; */
+
+}
+
+.blog-s1 {
+    grid-area: blog-s1;
+    /* padding-left: 25%;
+    padding-right: 25%; */
+}
+
+.blog-s2 {
+    grid-area: blog-s2;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.blog-s3 {
+    grid-area: blog-s3;
+    /* padding-left: 25%;
+    padding-right: 25%; */
+}
+
+.blog-s4 {
+    grid-area: blog-s4;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.blog-s5 {
+    grid-area: blog-s5;
+    /* padding-left: 25%;
+    padding-right: 25%; */
+}
+
+.blog-s6 {
+    grid-area: blog-s6;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.read-this {
+    color: white;
+    background-color: black;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+
+/* BLOG - end CSS */
+
+/* GALLERY - begin CSS */
+.gal-wrap {
+    /* color: red; */
+    display: grid;
+    grid-column: 1fr 1fr 1fr;
+    grid-row: repeat(3, 1fr);
+    grid-template-areas:
+        "gal-1 gal-2 gal-3 "
+        "gal-4 gal-5 gal-6"
+        "gal-7 gal-8 gal-9";
+    /* margin-bottom: 10px; */
+
+}
+
+
+/* GALLERY - end CSS */
