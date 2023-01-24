@@ -6,27 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <header>
+        <h1 class="lb-logo">Beards-R-US</h1>
         <div class="logo"><img src="" alt=""></div>
-        <nav>
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./gallery.html">Gallery</a>
-            <a href="./blog.html">blog</a>
-            <a href="./contact.html">Contact</a>
+        <nav class="nav-wrap">
+            <a class="nav-links1" href="./">Home</a>
+            <a class="nav-links2" href="./about.html">About</a>
+            <a class="nav-links3" href="./gallery.html">Gallery</a>
+            <a class="nav-links4" href="./blog.html">Blog</a>
+            <a class="nav-links5" href="./contact.html">Contact</a>
         </nav>
     </header>
-    <main>
-        <!-- content -->
-        <h1>Contact</h1>
-    </main>
+
+    <body>
+        <main>
+
+        </main>
+        <div class="container">
+            <section class="formsect">
+
+                <h1 class="contact-h1">Get In Touch</h1>
+
+
+                <form action="results.html" method="GET" enctype="multipart/form-data">
+                    <div>
+                        <input type="text" placeholder="Name" name="name" id="name">
+                    </div>
+
+
+                    <div>
+                        <input type="text" placeholder="Address" name="address" id="address">
+                    </div>
+
+                    <div>
+                        <input type="email" placeholder="Email" name="email" id="email">
+                    </div>
+
+                    <div>
+
+                        <input type="number" placeholder="Phone Number" name="number" id="number">
+                    </div>
+
+                    <div>
+
+                        <textarea id="comments" cols="71" rows="12" placeholder="Message" name="comments"></textarea>
+                    </div>
+
+                    <!-- <input type="hidden" name="hidden" value="hi"> -->
+
+                    <!-- <button type="reset">Reset</button> -->
+                    <button type="submit">Send</button>
+                </form>
+                <!-- <script src="scripts.js"></script> -->
+            </section>
+
+        </div>
+    </body>
 
     <footer>
         <!-- copyright and social media -->
+        <p> Find us on Social Media! </p>
+        <div class="social">
+            <div class="instagram">Instagram</div>
+            <div class="facebook">Facebook</div>
+            <div class="linkedin">Linkedin</div>
+        </div>
     </footer>
 
 </body>
