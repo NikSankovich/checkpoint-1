@@ -16,7 +16,13 @@
     grid-row: 1fr;
     grid-template-areas: "nav-links1 nav-links2 nav-links3 nav-links4 nav-links5";
     margin-bottom: 80px;
-    justify-content: space-evenly;
+    margin-left: 25%;
+    margin-right: 25%;
+
+    /* max-width: 30%; */
+    /* max-width: 500px; */
+    justify-content: space-around;
+    /* align-items: center; */
     /* justify-items: ; */
 
     /* flex-direction: row; */
@@ -86,6 +92,7 @@ footer {
     color: white;
     background-color: #252525;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
 
 }
 
@@ -192,6 +199,7 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
+    /* text-align: left; */
     /* justify-content: center; */
     /* justify-content: space-evenly; */
     width: 100%;
@@ -622,8 +630,10 @@ footer {
 }
 
 .gal-img {
-    width: 300px;
-    height: 300px;
+    /* width: 300px;
+    height: 300px; */
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border: 3px solid black;
     margin-top: 10px;
@@ -634,19 +644,20 @@ footer {
 }
 
 .gal-wrap>div {
-    width: 300px;
+    /* width: 300px; */
+    width: 100%;
 }
 
 .gal-wrap {
     /* color: red; */
     display: grid;
-    grid-column: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-row: repeat(3, 1fr);
     grid-template-areas:
         "gal-1 gal-2 gal-3 "
         "gal-4 gal-5 gal-6"
         "gal-7 gal-8 gal-9";
-    column-gap: 10px;
+    gap: 20px;
     width: 80%;
     /* margin-bottom: 10px; */
 
@@ -659,11 +670,25 @@ footer {
     justify-content: center;
 }
 
+@media (max-width: 992px) {
+    .gal-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: repeat(5, 1fr);
+        grid-template-areas:
+            "gal-1 gal-2"
+            "gal-3 gal-4"
+            "gal-5 gal-6"
+            "gal-7 gal-8"
+            "gal-9 .";
+    }
+}
+
 @media (max-width: 576px) {
     .gal-wrap {
         /* color: red; */
         display: grid;
-        grid-column: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-row: repeat(5, 1fr);
         grid-template-areas:
             "gal-1 gal-2"
